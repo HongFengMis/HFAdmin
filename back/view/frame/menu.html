@@ -1,0 +1,98 @@
+<!--cc-->
+<ul class="nav nav-list CC-menu">
+
+    <li class="open" rel="{$D}/{$C}/page">
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-desktop"></i>
+            <span class="menu-text"> 产品展示 </span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu" style="display: block">
+            <li>
+                <a href="{$D}/{$C}/page1/m?pid=1">
+                    <i class="icon-double-angle-right"></i>
+                    颗粒及纤维增强<br>电接触材料
+                </a>
+                <a href="{$D}/{$C}/page1/m?pid=2">
+                    <i class="icon-double-angle-right"></i>
+                    层状复合<br>电接触材料
+                </a>
+                <a href="{$D}/{$C}/page1/m?pid=3">
+                    <i class="icon-double-angle-right"></i>
+                    一体化电接触组件
+                </a>
+                <a href="{$D}/{$C}/page1/m?pid=4">
+                    <i class="icon-double-angle-right"></i>
+                    焊接材料
+                </a>
+                <a href="{$D}/{$C}/page1/m?pid=5">
+                    <i class="icon-double-angle-right"></i>
+                    热双金属
+                </a>
+                <a href="{$D}/{$C}/page1/m?pid=6">
+                    <i class="icon-double-angle-right"></i>
+                    硬质合金
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="open" rel="{$D}/{$C}/page">
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-desktop"></i>
+            <span class="menu-text"> 解决方案 </span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu" style="display: block">
+            <li>
+                <a href="{$D}/{$C}/page2/m?pid=1">
+                    <i class="icon-double-angle-right"></i>
+                    工业电器
+                </a>
+                <a href="{$D}/{$C}/page2/m?pid=2">
+                    <i class="icon-double-angle-right"></i>
+                    建筑电器
+                </a>
+                <a href="{$D}/{$C}/page2/m?pid=3">
+                    <i class="icon-double-angle-right"></i>
+                    汽车电器
+                </a>
+                <a href="{$D}/{$C}/page2/m?pid=4">
+                    <i class="icon-double-angle-right"></i>
+                    通讯电子
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="open" rel="{$D}/{$C}/page">
+        <a href="#" class="dropdown-toggle">
+            <i class="icon-desktop"></i>
+            <span class="menu-text"> 数据生成 </span>
+            <b class="arrow icon-angle-down"></b>
+        </a>
+
+        <ul class="submenu" style="display: block">
+            <li>
+                <a href="{$D}/{$C}/create/m">
+                    <i class="icon-double-angle-right"></i>
+                    数据生成
+                </a>
+            </li>
+        </ul>
+    </li>
+
+</ul><!-- /.nav-list -->
+
+<script type="text/javascript">
+$(function () {
+    $.each($('.CC-menu li'),function(){
+        if (location.href.indexOf($(this).attr('rel'))>0 ) {
+            $(this).addClass('active');
+        }
+    })
+})
+</script>
+<!--cc-->
